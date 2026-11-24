@@ -36,6 +36,8 @@ Running the script generates:
 2. **Comparative Visualizations:**
    * A scatter plot comparing H_g vs. H_e color-coded by the Integrated Habitability Index (IHI).
    * A grouped bar chart breaking down the scores across all analyzed planets.
+  
+<img width="1489" height="640" alt="graficas" src="https://github.com/user-attachments/assets/4b5a9f4d-6a81-45f1-8288-338f7d32389a" />
 
 ## Requirements & Usage
 
