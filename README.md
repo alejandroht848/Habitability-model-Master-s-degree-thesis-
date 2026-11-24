@@ -39,6 +39,20 @@ Running the script generates:
   
 <img width="1489" height="640" alt="graficas" src="https://github.com/user-attachments/assets/4b5a9f4d-6a81-45f1-8288-338f7d32389a" />
 
+## Limitations & Future Improvements
+
+While the current model provides a solid first-order framework combining galactic and circumstellar habitability, several scientific and technical enhancements are planned for future versions:
+
+### Scientific & Physical Refinements
+* **Dynamic Atmospheric & Stellar Activity Modeling:** Currently, atmospheric retention (A) and stellar stability/activity (E) are treated as simplified, fixed input parameters. Future iterations will incorporate mass-radius relationships, atmospheric escape rates (XUV flux), and stellar flare/magnetic activity indices.
+* **Sensitivity & Weighting Analysis:** The current Integrated Habitability Index (IHI) uses equal weighting (X_g = X_e = 0.5). Performing a Monte Carlo simulation or sensitivity analysis across different weight distributions will help quantify model uncertainties.
+* **Tidal Locking Effects:** Planets orbiting M-dwarfs (such as `GJ 667 Cc` or the `Kepler-1649` system) are prone to tidal locking, which significantly alters atmospheric heat redistribution and equilibrium temperature (T_eq) estimates.
+
+### Software & Data Architecture
+* **Automated Catalog Ingestion:** Decoupling the planetary dataset from the source code by importing data directly from external `.csv` files or querying the **NASA Exoplanet Archive API** (using `astroquery`) to scale the analysis to hundreds of confirmed exoplanets.
+* **Code Modularization:** Refactoring the script into separate modules (`galactic.py`, `stellar.py`, `plotting.py`) and adding unit tests (`pytest`) for improved maintainability.
+
+
 ## Requirements & Usage
 
 ### Dependencies
